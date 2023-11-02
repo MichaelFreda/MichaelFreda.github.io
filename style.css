@@ -187,5 +187,11 @@ address {
 }
 
 .nav-bar {
-    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-bar a {
+    list-style-type: none;
+    text-decoration: none;
 }
