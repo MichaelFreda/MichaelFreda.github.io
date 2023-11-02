@@ -207,3 +207,18 @@ address {
   background: #ddd;
   color: black;
 }
+
+.imgBox {
+  max-width: 85%;
+}
+
+.contentBox {
+  display: flex;
+  align-content: space-between;
+  text-align: center;
+  position: relative;
+  width: 0%;
+  height: 0%;
+  transform: scale(0);
+  transition: 1s;
+}
