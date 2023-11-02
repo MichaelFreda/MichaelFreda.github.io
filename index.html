@@ -1,121 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
-    <title>Accessibility Quiz</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
-      <h1>HTML/CSS Quiz</h1>
-      <nav>
-        <ul>
-          <li><a href="#student-info" accesskey="s">INFO</a></li>
-          <li><a href="#html-questions" accesskey="h">HTML</a></li>
-          <li><a href="#css-questions" accesskey="c">CSS</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-        <section role="region" aria-labelledby="student-info">
-          <h2 id="student-info">Student Info</h2>
-          <div class="info">
-            <label for="student-name">Name:</label>
-            <input type="text" name="student-name" id="student-name" />
-          </div>
-          <div class="info">
-            <label for="student-email">Email:</label>
-            <input type="email" name="student-email" id="student-email" />
-          </div>
-          <div class="info">
-            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
-            <input type="date" name="birth-date" id="birth-date" />
-          </div>
-        </section>
-        <section role="region" aria-labelledby="html-questions">
-          <h2 id="html-questions">HTML</h2>
-          <div class="question-block">
-            <p>1</p>
-            <fieldset class="question" name="html-question-one">
-              <legend>
-                The legend element represents a caption for the content of its
-                parent fieldset element
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q1-a1">
-                    <input type="radio" id="q1-a1" name="q1" value="true" />
-                    True
-                  </label>
-                </li>
-                <li>
-                  <label for="q1-a2">
-                    <input type="radio" id="q1-a2" name="q1" value="false" />
-                    False
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="question-block">
-            <p>2</p>
-            <fieldset class="question" name="html-question-two">
-              <legend>
-                A label element nesting an input element is required to have a
-                for attribute with the same value as the input's id
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q2-a1">
-                    <input type="radio" id="q2-a1" name="q2" value="true" />
-                    True
-                  </label>
-                </li>
-                <li>
-                  <label for="q2-a2">
-                    <input type="radio" id="q2-a2" name="q2" value="false" />
-                    False
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-        </section>
-        <section role="region" aria-labelledby="css-questions">
-          <h2 id="css-questions">CSS</h2>
-          <div class="formrow">
-            <div class="question-block">
-              <label for="customer">Are you a frontend developer?</label>
-            </div>
-            <div class="answer">
-              <select name="customer" id="customer" required>
-                <option value="">Select an option</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="question-block">
-              <label for="css-questions">Do you have any questions:</label>
-            </div>
-            <div class="answer">
-              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
-            </div>
-          </div>
-        </section>
-        <button type="submit">Send</button>
-      </form>
-    </main>
-    <footer>
-      <address>
-        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
-        San Francisco<br />
-        California<br />
-        USA
-      </address>
-    </footer>
-  </body>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <img id="dickinson-logo" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsigmabetadelta.org%2Fwp-content%2Fuploads%2FDickinson-Logo-2.png&tbnid=KrAz8K75jYo7MM&vet=12ahUKEwitgujwpaSCAxXNEVkFHTPkC6UQMygcegUIARCRAQ..i&imgrefurl=https%3A%2F%2Fsigmabetadelta.org%2Fnewest-members-dickinson-college-2%2Fdickinson-logo-3%2F&docid=-aFdiX7TwrsZQM&w=226&h=126&q=dickinson%20college%20logo&ved=2ahUKEwitgujwpaSCAxXNEVkFHTPkC6UQMygcegUIARCRAQ">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" accesskey="h">HOME</a></li>
+                    <li><a href="#education" accesskey="e">EDUCATION</a></li>
+                    <li><a href="#experience" accesskey="x">EXPERIENCE</a></li>
+                    <li><a href="#projects" accesskey="p">PROJECTS</a></li>
+                    <li><a href="#skills" accesskey="s">SKILLS</a></li>
+                    <li><a href="#references" accesskey="r">REFERENCES</a></li>
+                    <li><a href="#contact" accesskey="c">CONTACT ME</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <main>
+            <section role="region" aria-labelledby="home">
+                <h2 id="home">
+                    Home
+                </h2>
+                <p class="bio">
+                    Hello all! My name is Michael Freda, and I am a Junior at Dickinson College where I am double majoring in Computer Science and Data Analytics. I plan to pursue a career in the computer science / data analysis fields. My research interests include machine learning in the forms of NLP, linear regression, and deep learning approaches. I have research experience during my undergraduate career, and I am interested in industry and research opportunities for the future.
+                </p>
+            </section>
+            <section role="region" aria-labelledby="education">
+                <h2 id="education">
+                    Education
+                </h2>
+            </section>
+            <section role="region" aria-labelledby="experience">
+                <h2 id="experience">
+                    Experience
+                </h2>
+            </section>
+            <section role="region" aria-labelledby="projects">
+                <h2 id="projects">
+                    Projects
+                </h2>
+                <ul>
+                    <li>Job Postings Analyzer</li>
+                        <p>Scraped job postings from Indeed.com using selenium and python to extract relevant data from each job offering. Cleaned data and utilized several data analysis techniques to view possible opportunities and overall insights surrounding the job market.</p>
+                        <p>Used text analysis to better understand the market while being able to successfully report discoveries found using the program.</p>
+                    <li>Best Fit Analysis</li>
+                        <p>Collaborated in a group to create a Best Fit Analysis program, which performed text analysis on two pieces of text to determine which individual had the most similar stylistic feature values in their text fingerprints to a third individual.</p>
+                        <p>Utilized the nltk python package in order to work with human language data and applying the data into direct comparisons through the use of tokenization.</p>
+                </ul>
+            </section>
+            <section role="region" aria-labelledby="skills">
+                <h2 id="skills">
+                    Skills
+                </h2>
+            </section>
+            <section role="region" aria-labelledby="references">
+                <h2 id="references">
+                    References
+                </h2>
+            </section>
+            <section role="region" aria-labelledby="contact">
+                <h2 id="contact">
+                    Contact
+                </h2>
+            </section>
+        </main>
+    </body>
 </html>
