@@ -74,5 +74,5 @@ ul li:nth-child(3) a:before {
 
 i.fa {
   display:inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
