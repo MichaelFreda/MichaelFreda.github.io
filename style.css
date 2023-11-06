@@ -1,4 +1,4 @@
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
   }
@@ -221,7 +221,7 @@ address {
   height: 0%;
   transform: scale(0);
   transition: 1s;
-}
+} */
 
 body {
   margin: 0;
