@@ -72,8 +72,6 @@ ul li:nth-child(3) a:before {
   background: #0077b5;
 }
 
-.quick-actions i.fa-commenting-o:before{
-  font-size:50px;
-  /*margin-top:-5px;*/
-  float:left;
+i.fa {
+  vertical-align: middle;
 }
