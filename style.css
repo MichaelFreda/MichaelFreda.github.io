@@ -389,22 +389,14 @@ body {
       line-height: 1;
   }
 
-  .ic-python:before {
+  /* .ic-python:before {
       content: "f3e2"
-      /* content: url("https://michaelfreda.github.io/images/python-seeklogo.com.svg"); */
   }
 
   .ic-java:before {
       content: "f4e4"
-      /* content: url("https://michaelfreda.github.io/images/java-seeklogo.com.svg"); */
   }
 
   .ic-r:before {
       content: "f4f7"
-      /* content: url("https://michaelfreda.github.io/images/r-seeklogo.com.svg"); */
-  }
-
-  /* .ic-c:before {
-      content: ""
-      /* content: url("https://michaelfreda.github.io/images/c-seeklogo.com.svg"); */
-  /* } */
+  } */
