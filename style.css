@@ -72,6 +72,16 @@ ul li:nth-child(3) a:before {
   background: #0077b5;
 }
 
-.fa { 
+.quick-actions i {
+  font-size: 54px;
+  cursor: pointer;
+  color: #999;
   vertical-align: middle;
+}
+.fa:before {
+  vertical-align: middle;
+}
+.quick-actions{
+  border:1px solid #ccc;
+  display: inline-block;
 }
