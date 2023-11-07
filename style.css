@@ -55,3 +55,7 @@ ul li a:before {
   transition: .5s;
   z-index: 2;
 }
+
+ul li a:hover:before {
+  top: 0;
+}
