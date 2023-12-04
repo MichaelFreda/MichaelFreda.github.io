@@ -3,7 +3,8 @@
 	<head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+        <!-- Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="argon-design-system.css"/>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -59,7 +60,9 @@
                 </div>
             </nav>
         </header>
+        
         <main class="main">
+
             <!-- HOME -->
                 <section class="home section" id="home">
                     <div class="home_container container grid">
@@ -87,65 +90,7 @@
                         </div>
                     </div>
                 </section>
-            <!-- EDUCATION -->
-                <!-- <section class="education section" id="education">
-                    <div class="education_container container grid">
-                        <div class="home_content grid">
-                            <div class="home_social">
-                                <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="home_social-icon" id="myLinkedIn">
-                                    <i class="uil uil-linkedin-alt"></i>
-                                </a>
-
-                                <a href="https://github.com/MichaelFreda" target="_blank" class="home_social-icon" id="myGitHub">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="home_data">
-                            <small class="home_welcome"> Welcome to my Portfolio Website! </small>
-                            <h1 class="home_desc">
-                                Hello all! My name is Michael Freda, and I am a Junior at Dickinson College where I am double majoring
-                                in Computer Science and Data Analytics. I plan to pursue a career in the computer science / data analysis
-                                fields. My research interests include machine learning in the forms of NLP, linear regression, and deep
-                                learning approaches. I have research experience during my undergraduate career, and I am interested in
-                                industry and research opportunities for the future.
-                            </h1>
-                        </div>
-                    </div>
-                </section> -->
-            <!-- QUALIFICATIONS -->
-                <!-- <section class="qualification section" id="qualification">
-                    <h2 class="section_title"> QUALIFICATION </h2>
-                    <span class="section_subtitle"> RESEARCH EXPERIENCE </span>
-                    <div class="qualification_container container grid">
-                        <div class="home_content grid">
-                            <div class="home_social">
-                                <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="home_social-icon" id="myLinkedIn">
-                                    <i class="uil uil-linkedin-alt"></i>
-                                </a>
-
-                                <a href="https://github.com/MichaelFreda" target="_blank" class="home_social-icon" id="myGitHub">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="home_data">
-                            <small class="home_welcome"> Welcome to my Portfolio Website! </small>
-                            <h1 class="home_desc">
-                                Hello all! My name is Michael Freda, and I am a Junior at Dickinson College where I am double majoring
-                                in Computer Science and Data Analytics. I plan to pursue a career in the computer science / data analysis
-                                fields. My research interests include machine learning in the forms of NLP, linear regression, and deep
-                                learning approaches. I have research experience during my undergraduate career, and I am interested in
-                                industry and research opportunities for the future.
-                            </h1>
-                        </div>
-                    </div>
-                </section> -->
-            <!-- PROJECTS -->
             <!-- SKILLS -->
-  
                 <section class="skills section" id="skills">
                     <h1 class="section_title"> SKILLS </h1>
                     <span class="section_subtitle"> MY SKILLSETS </span>
@@ -317,8 +262,8 @@
                             </div>
                         </div>
 
-                         <!-- Jupyter -->
-                         <div class="skills_container-card">
+                        <!-- Jupyter -->
+                        <div class="skills_container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Jupyter Logo" style="max-width:85%">
@@ -328,10 +273,41 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                </section>    
+                </section> 
+                <!-- PORTFOLIO -->
+                
+                <section class="portfolio section" id="portfolio">
+                    <h2 class="section_title">PORTFOLIO</h2>
+                    <span class="section_subtitle"> PROJECTS </span>
+
+                    <div class="blog-slider">
+                        <div class="blog-slider_wrp swiper-wrapper">
+                    
+                            <!-- Best Fit -->
+                            <div class="blog-slider_item swiper-slide">
+                                <div class="blog-slider_img">
+                                    <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Portfolio item">
+                                </div>
+                                
+                                <div class="blog-slider_content">
+                                    <span class="blog-slider_code"> May 2022</span>
+                                    <div class="blog-slider_title"> Best Fit Analyzer</div>
+                                    <div class="blog-slider_text"> Collaborated with another student in performing text analysis with the NLTK library to draw direct comparisons between a given set of texts.</div>
+                                    <div class="blog-slider_text"> Accomplished generating average text fingerprints to detect similarity between texts.</div>
+                                    <a href="https://github.com/MichaelFreda/Best-Fit-Analysis" target="_blank" class="button blog-slider_button button--flex">
+                                        View Details
+                                        <i class="uil uil-play button_icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-slider_pagination"></div>
+                        </div>
+                    </div>
+                </section>   
             <!-- CONTACT -->
         </main>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>
