@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
         <!-- Swiper's CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="swiper.bundle.min.css">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="argon-design-system.css"/>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>Michael Freda</title>
     </head>
     <body>
         <header class="header" id="header">
@@ -62,40 +66,40 @@
         
         <main class="main">
 
-            <!-- HOME -->
-                <section class="home section" id="home">
-                    <div class="home__container container grid">
-                        <div class="home__content grid">
-                            <div class="home__social">
-                                <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="home__social-icon" id="myLinkedIn">
-                                    <i class="uil uil-linkedin-alt"></i>
-                                </a>
+        <!-- HOME -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="home__social-icon" id="myLinkedIn">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
 
-                                <a href="https://github.com/MichaelFreda" target="_blank" class="home__social-icon" id="myGitHub">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="home__data">
-                            <small class="home__welcome"> Welcome to my Portfolio Website! </small>
-                            <h3 class="home__desc">
-                                Hello all! My name is Michael Freda, and I am a Junior at Dickinson College where I am double majoring
-                                in Computer Science and Data Analytics. I plan to pursue a career in the computer science / data analysis
-                                fields. My research interests include machine learning in the forms of NLP, linear regression, and deep
-                                learning approaches. I have research experience during my undergraduate career, and I am interested in
-                                industry and research opportunities for the future.
-                            </h3>
+                            <a href="https://github.com/MichaelFreda" target="_blank" class="home__social-icon" id="myGitHub">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
                         </div>
                     </div>
-                </section>
-            <!-- SKILLS -->
-                <section class="skills section" id="skills">
-                    <h1 class="section__title"> SKILLS </h1>
-                    <span class="section__subtitle"> MY SKILLSETS </span>
-        
-                    <div class="skills__container container grid">
-        
+
+                    <div class="home__data">
+                        <small class="home__welcome"> Welcome to my Portfolio Website! </small>
+                        <h3 class="home__desc">
+                            Hello all! My name is Michael Freda, and I am a Junior at Dickinson College where I am double majoring
+                            in Computer Science and Data Analytics. I plan to pursue a career in the computer science / data analysis
+                            fields. My research interests include machine learning in the forms of NLP, linear regression, and deep
+                            learning approaches. I have research experience during my undergraduate career, and I am interested in
+                            industry and research opportunities for the future.
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        <!-- SKILLS -->
+            <section class="skills section" id="skills">
+                <h1 class="section__title"> SKILLS </h1>
+                <span class="section__subtitle"> MY SKILLSETS </span>
+    
+                <div class="skills__container container grid">
+    
                     <!-- Programming language -->
                     <h3 class = "section__title"> LANGUAGE </h3>
                     <div class="row" id="skillset_container">
@@ -273,41 +277,72 @@
                             </div>
                         </div>
                     </div>
-                </section> 
-            <!-- PORTFOLIO -->
-                
-                <section class="portfolio section" id="portfolio">
-                    <h2 class="section__title">PORTFOLIO</h2>
-                    <span class="section__subtitle"> PROJECTS </span>
+                </div>
+            </section> 
+        <!-- PORTFOLIO -->
+            
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">PORTFOLIO</h2>
+                <span class="section__subtitle"> PROJECTS </span>
 
-                    <div class="blog-slider">
-                        <div class="blog-slider__wrp swiper-wrapper">
-                    
-                            <!-- Best Fit -->
-                            <div class="blog-slider__item swiper-slide">
-                                <div class="blog-slider__img">
-                                    <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Portfolio item">
-                                </div>
-                                
-                                <div class="blog-slider__content">
-                                    <span class="blog-slider__code"> May 2022</span>
-                                    <div class="blog-slider__title"> Best Fit Analyzer</div>
-                                    <div class="blog-slider__text"> Collaborated with another student in performing text analysis with the NLTK library to draw direct comparisons between a given set of texts.</div>
-                                    <div class="blog-slider__text"> Accomplished generating average text fingerprints to detect similarity between texts.</div>
-                                    <a href="https://github.com/MichaelFreda/Best-Fit-Analysis" target="_blank" class="button blog-slider__button button--flex">
-                                        View Details
-                                        <i class="uil uil-play button__icon"></i>
-                                    </a>
-                                </div>
+                <!-- <div class="blog-slider"> -->
+                <div class="blog-slider swiper-container swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">    
+                    <!-- <div class="blog-slider__wrp swiper-wrapper"> -->
+                        <div class="blog-slider__wrp swiper-wrapper" aria-live="polite">
+                
+                        <!-- Best Fit -->
+                        <!-- <div class="blog-slider__item swiper-slide"> -->
+                        <div class="blog-slider__item swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 7" data-swiper-slide-index="0" style="width: 87px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                            <div class="blog-slider__img">
+                                <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Portfolio item">
                             </div>
-                            <div class="blog-slider__pagination"></div>
+                            
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code"> May 2022</span>
+                                <div class="blog-slider__title"> Best Fit Analyzer</div>
+                                <div class="blog-slider__text"> • Collaborated with another student in performing text analysis with the NLTK library to draw direct comparisons between a given set of texts.</div>
+                                <div class="blog-slider__text"> • Accomplished generating average text fingerprints to detect similarity between texts.</div>
+                                <a href="https://github.com/MichaelFreda/Best-Fit-Analysis" target="_blank" class="button blog-slider__button button--flex">
+                                    View Details
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
                         </div>
+
+                        <!-- Job Postings Analyzer -->
+                        <!-- <div class="blog-slider__item swiper-slide"> -->
+                        <div class="blog-slider__item swiper-slide swiper-slide-next" role="group" aria-label="2 / 7" data-swiper-slide-index="1" style="width: 87px; opacity: 0; transform: translate3d(-87px, 0px, 0px);">
+                            <div class="blog-slider__img">
+                                <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Portfolio item">
+                            </div>
+                            
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code"> May 2023</span>
+                                <div class="blog-slider__title"> Job Postings Analyzer</div>
+                                <div class="blog-slider__text"> • Scraped and cleaned raw data from a website to conduct text analysis on to construct general insights on the job market and desired attributes.</div>
+                                <div class="blog-slider__text"> • Accomplished visualization for qualitative and quantitative data for 930 job postings with average hourly and salary wages, along with most mentioned responsibilities and skills.</div>
+                                <a href="https://github.com/MichaelFreda/Job-Postings-Analyzer" target="_blank" class="button blog-slider__button button--flex">
+                                    View Details
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="blog-slider__pagination"></div> -->
+                        <div class="blog-slider__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-activw" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                     </div>
-                </section>   
-            <!-- CONTACT -->
+                   
+                </div>
+            </section>   
+        <!-- CONTACT -->
         </main>
+        <script src="js/core/bootstrap.min.js"></script>
         <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="swiper.bundle.min.js"></script>
         <!-- Self Script -->
         <script src="js/script.js"></script>
     </body>

@@ -15,6 +15,7 @@ var swiper = new Swiper(".blog-slider", {
   pagination: {
     el: ".blog-slider__pagination",
     clickable: true,
+    dynamicbullets: true,
   },
   // mousewheel: true,
   keyboard: true,
