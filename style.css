@@ -136,6 +136,15 @@ a {
   text-decoration: none;
 }
 
+/* LAYOUT */
+.container {
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -147,6 +156,8 @@ a {
   margin-right: var(--mb-0-25);
 }
 
+/* NAV */
+
 .nav {
   max-width: 968px;
   height: var(--header-height);
@@ -157,33 +168,48 @@ a {
   margin-right: var(--mb-0-25);
 }
 
-.container {
-  margin-right: auto;
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: var(--h3-font-size);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
 }
 
 .navbar-brand {
   font-family: var(--robotomono-font);
 }
 
-.nav__menu {
-  padding: 2rem 0.25rem 4rem;
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.5s;
+  }
 }
 
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
-
-.grid {
-  display: grid;
-}
-
-/* .nav__item {
-
-} */
-
-.nav__icon {
-  font-size: 1.2rem;
 }
 
 .nav__link {
@@ -199,14 +225,8 @@ a {
   color: var(--first-color);
 }
 
-.nav__logo,
-.nav__toggle {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
-
-.nav__logo:hover {
-  color: var(--first-color);
+.nav__icon {
+  font-size: 1.2rem;
 }
 
 .nav__close {
@@ -221,6 +241,8 @@ a {
 .nav__close:hover {
   color: var(--first-color-alt);
 }
+
+/* ------ */
 
 .section {
   padding: 2rem 0 4rem;
@@ -748,13 +770,13 @@ a {
     grid-template-columns: 0.25fr 3fr;
   }
 
-  .home__scroll {
+  /* .home__scroll {
     margin-top: var(--mb-0-25);
   }
 
   .home__scroll-mouse {
     margin-top: var(--mb-0-25);
-  }
+  } */
 
   .about {
     margin-top: 6rem;
@@ -882,9 +904,9 @@ a {
     column-gap: 2rem;
   }
 
-  .home__scroll-button {
+  /* .home__scroll-button {
     margin-left: 3rem;
-  }
+  } */
 
   .about {
     margin-top: 4rem;
