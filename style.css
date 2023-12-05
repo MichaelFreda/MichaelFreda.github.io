@@ -623,7 +623,12 @@ a {
   color: var(--text-color);
   margin-bottom: 30px;
   line-height: 1.5em;
+  /* white-space: nowrap;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; */
+  white-space:nowrap;
 }
+
 .blog-slider__button {
   display: inline-flex;
   /* background-image: linear-gradient(147deg, var(--first-color) 0%, var(--first-color-alt) 47%); */
