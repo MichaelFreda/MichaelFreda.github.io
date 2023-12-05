@@ -3,60 +3,59 @@
 	<head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
         <!-- Swiper's CSS -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="argon-design-system.css"/>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
     <body>
         <header class="header" id="header">
             <nav class="nav container navbar-expand-lg">
-                <a href="#" class="nav_logo navbar-brand ml-3" style = "position: relative; top:20px;">Michael Freda</a>
+                <a href="#" class="nav__logo navbar-brand ml-3" style = "position: relative; top:20px;">Michael Freda</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="nav_menu" id="nav_menu" style="position:relative; top:20px;">
-                    <ul class="nav_list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link">
-                                <i class="uil uil-estate nav_icon"></i>HOME
+                <div class="nav__menu" id="nav-menu" style="position:relative; top:20px;">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>HOME
                             </a>
                         </li>
 
-                        <li class="nav_item">
-                            <a href="#education" class="nav_link">
-                                <i class="uil uil-estate nav_icon"></i>EDUCATION
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>EDUCATION
                             </a>
                         </li>
 
-                        <li class="nav_item">
-                            <a href="#experience" class="nav_link">
-                                <i class="uil uil-estate nav_icon"></i>EXPERIENCE
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>EXPERIENCE
                             </a>
                         </li>
 
-                        <li class="nav_item">
-                            <a href="#projects" class="nav_link">
-                                <i class="uil uil-estate nav_icon"></i>PROJECTS
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>PROJECTS
                             </a>
                         </li>
 
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="uil uil-estate nav_icon"></i>SKILLS
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>SKILLS
                             </a>
                         </li>
 
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="uil uil-estate nav_icon"></i>CONTACT
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>CONTACT
                             </a>
                         </li>
                     </ul>
-                    <i class="uil uil-times nav_close" id="nav-close"></i>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
             </nav>
         </header>
@@ -65,22 +64,22 @@
 
             <!-- HOME -->
                 <section class="home section" id="home">
-                    <div class="home_container container grid">
-                        <div class="home_content grid">
-                            <div class="home_social">
-                                <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="home_social-icon" id="myLinkedIn">
+                    <div class="home__container container grid">
+                        <div class="home__content grid">
+                            <div class="home__social">
+                                <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="home__social-icon" id="myLinkedIn">
                                     <i class="uil uil-linkedin-alt"></i>
                                 </a>
 
-                                <a href="https://github.com/MichaelFreda" target="_blank" class="home_social-icon" id="myGitHub">
+                                <a href="https://github.com/MichaelFreda" target="_blank" class="home__social-icon" id="myGitHub">
                                     <i class="uil uil-github-alt"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="home_data">
-                            <small class="home_welcome"> Welcome to my Portfolio Website! </small>
-                            <h3 class="home_desc">
+                        <div class="home__data">
+                            <small class="home__welcome"> Welcome to my Portfolio Website! </small>
+                            <h3 class="home__desc">
                                 Hello all! My name is Michael Freda, and I am a Junior at Dickinson College where I am double majoring
                                 in Computer Science and Data Analytics. I plan to pursue a career in the computer science / data analysis
                                 fields. My research interests include machine learning in the forms of NLP, linear regression, and deep
@@ -92,17 +91,17 @@
                 </section>
             <!-- SKILLS -->
                 <section class="skills section" id="skills">
-                    <h1 class="section_title"> SKILLS </h1>
-                    <span class="section_subtitle"> MY SKILLSETS </span>
+                    <h1 class="section__title"> SKILLS </h1>
+                    <span class="section__subtitle"> MY SKILLSETS </span>
         
-                    <div class="skills_container container grid">
+                    <div class="skills__container container grid">
         
                     <!-- Programming language -->
-                    <h3 class = "section_title"> LANGUAGE </h3>
+                    <h3 class = "section__title"> LANGUAGE </h3>
                     <div class="row" id="skillset_container">
                         
                         <!-- Python -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/python-seeklogo.com.svg" alt="Python Logo" style="max-width:85%">
@@ -114,7 +113,7 @@
                         </div>
 
                         <!-- Java -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/java-seeklogo.com.svg" alt="Java Logo" style="max-width:85%">
@@ -126,7 +125,7 @@
                         </div>
         
                         <!-- C -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/c-seeklogo.com.svg" alt="C Logo" style="max-width:85%">
@@ -138,7 +137,7 @@
                         </div>
 
                         <!-- C++ -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/cplusplus-seeklogo.com.svg" alt="C++ Logo" style="max-width:85%">
@@ -150,7 +149,7 @@
                         </div>
 
                         <!-- HTML -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/html-seeklogo.com.svg" alt="HTML Logo" style="max-width:85%">
@@ -162,7 +161,7 @@
                         </div>
 
                         <!-- CSS -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/css-seeklogo.com.svg" alt="CSS Logo" style="max-width:85%">
@@ -174,7 +173,7 @@
                         </div>
 
                         <!-- JavaScript -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/javascript-seeklogo.com.svg" alt="JavaScript Logo" style="max-width:85%">
@@ -186,7 +185,7 @@
                         </div>
 
                         <!-- R -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/r-seeklogo.com.svg" alt="R Logo" style="max-width:85%">
@@ -199,11 +198,11 @@
                     </div>
                     
                     <!-- Tools & Technologies -->
-                    <h3 class = "section_title"> TOOLS & TECHNOLOGIES </h3>
+                    <h3 class = "section__title"> TOOLS & TECHNOLOGIES </h3>
                     <div class="row" id="skillset_container">
                         
                         <!-- Docker -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/docker-seeklogo.com.svg" alt="Docker Logo" style="max-width:85%">
@@ -215,7 +214,7 @@
                         </div>
                     
                         <!-- Linux -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/linux-seeklogo.com.svg" alt="Linux Logo" style="max-width:85%">
@@ -227,7 +226,7 @@
                         </div>
 
                         <!-- Git -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/git-seeklogo.com.svg" alt="Git Logo" style="max-width:85%">
@@ -239,7 +238,7 @@
                         </div>
 
                         <!-- SQL -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/sql-seeklogo.com.svg" alt="SQL Logo" style="max-width:85%">
@@ -251,7 +250,7 @@
                         </div>
 
                         <!-- Tableau -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/tableau-seeklogo.com.svg" alt="Tableau Logo" style="max-width:85%">
@@ -263,7 +262,7 @@
                         </div>
 
                         <!-- Jupyter -->
-                        <div class="skills_container-card">
+                        <div class="skills__container-card">
                             <div class="card_skill shadow2">
                                 <div class="imgBox">
                                     <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Jupyter Logo" style="max-width:85%">
@@ -275,33 +274,33 @@
                         </div>
                     </div>
                 </section> 
-                <!-- PORTFOLIO -->
+            <!-- PORTFOLIO -->
                 
                 <section class="portfolio section" id="portfolio">
-                    <h2 class="section_title">PORTFOLIO</h2>
-                    <span class="section_subtitle"> PROJECTS </span>
+                    <h2 class="section__title">PORTFOLIO</h2>
+                    <span class="section__subtitle"> PROJECTS </span>
 
                     <div class="blog-slider">
-                        <div class="blog-slider_wrp swiper-wrapper">
+                        <div class="blog-slider__wrp swiper-wrapper">
                     
                             <!-- Best Fit -->
-                            <div class="blog-slider_item swiper-slide">
-                                <div class="blog-slider_img">
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img">
                                     <img src="https://michaelfreda.github.io/images/jupyter-seeklogo.com.svg" alt="Portfolio item">
                                 </div>
                                 
-                                <div class="blog-slider_content">
-                                    <span class="blog-slider_code"> May 2022</span>
-                                    <div class="blog-slider_title"> Best Fit Analyzer</div>
-                                    <div class="blog-slider_text"> Collaborated with another student in performing text analysis with the NLTK library to draw direct comparisons between a given set of texts.</div>
-                                    <div class="blog-slider_text"> Accomplished generating average text fingerprints to detect similarity between texts.</div>
-                                    <a href="https://github.com/MichaelFreda/Best-Fit-Analysis" target="_blank" class="button blog-slider_button button--flex">
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code"> May 2022</span>
+                                    <div class="blog-slider__title"> Best Fit Analyzer</div>
+                                    <div class="blog-slider__text"> Collaborated with another student in performing text analysis with the NLTK library to draw direct comparisons between a given set of texts.</div>
+                                    <div class="blog-slider__text"> Accomplished generating average text fingerprints to detect similarity between texts.</div>
+                                    <a href="https://github.com/MichaelFreda/Best-Fit-Analysis" target="_blank" class="button blog-slider__button button--flex">
                                         View Details
-                                        <i class="uil uil-play button_icon"></i>
+                                        <i class="uil uil-play button__icon"></i>
                                     </a>
                                 </div>
                             </div>
-                            <div class="blog-slider_pagination"></div>
+                            <div class="blog-slider__pagination"></div>
                         </div>
                     </div>
                 </section>   
@@ -309,5 +308,7 @@
         </main>
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Self Script -->
+        <script src="js/script.js"></script>
     </body>
 </html>
