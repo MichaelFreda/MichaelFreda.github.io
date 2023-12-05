@@ -245,21 +245,6 @@ a {
   text-align: center;
 }
 
-.skills__container-card {
-  position: relative;
-  display: grid;
-  width: auto;
-  height: auto;
-  padding-bottom: var(--mb-0-75);
-  margin: auto;
-  margin-bottom: var(--mb-2);
-}
-
-.skills__container-card:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
 .card_skill {
   position: relative;
   width: 150px;
@@ -351,11 +336,34 @@ a {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.row {
+.row .skills__container-card {
+  /* width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -15px; */
+  position: relative;
+  display: grid;
+  width: auto;
+  height: auto;
+  padding-bottom: var(--mb-0-75);
+  margin: auto;
+  margin-bottom: var(--mb-2);
+}
+
+.skills__container-card {
+  position: relative;
+  display: grid;
+  width: auto;
+  height: auto;
+  padding-bottom: var(--mb-0-75);
+  margin: auto;
+  margin-bottom: var(--mb-2);
+}
+
+.skills__container-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 
