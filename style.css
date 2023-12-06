@@ -811,7 +811,7 @@ a {
   .home__data {
     grid-column: initial;
   }
-
+  
   .about__container,
   .skill__container,
   .portfolio__container,
@@ -956,9 +956,9 @@ a {
     margin-top: 4.5rem;
   }
 
-  /* .home__data{
+  .home__data{
       transform: translateX(80px);
-    } */
+    }
 }
 
 /* Larger size Screen devices */
