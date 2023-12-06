@@ -995,3 +995,8 @@ a {
     min-width: 700px;
   }
 }
+
+.imgBox__timeline {
+  padding-top: 2em;
+  width: 25%;
+}
