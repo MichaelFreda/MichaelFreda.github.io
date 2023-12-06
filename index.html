@@ -21,6 +21,15 @@
         <header class="header" id="header">
             <nav class="nav container navbar-expand-lg">
                 <a href="#" class="nav__logo navbar-brand ml-3" style = "position: relative; top:20px;">Michael Freda</a>
+                <div class="header__socials">
+                    <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="header__social" id="myLinkedIn">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="https://github.com/MichaelFreda" target="_blank" class="header__social" id="myGitHub">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,14 +55,14 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i>PROJECTS
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>SKILLS
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i>SKILLS
+                            <a href="#projects" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>PROJECTS
                             </a>
                         </li>
 
@@ -64,6 +73,15 @@
                         </li>
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- THEME CHANGING BUTTONS -->
+                    <i data-mode= "dark" class="uil uil-moon moon-change-theme" id="theme-button" style = "position:relative; top:20px;"></i>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -428,7 +446,85 @@
                 </div>
             </section>   
         <!-- CONTACT -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title"> CONTACT ME </h2>
+                <span class="section__subtitle"> CONTACT INFORMATION </span>
+
+                <div class="row mt-lg-6 justify-content-center contact_mail">
+                    <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
+                        <!-- CONTACT INFORMATION -->
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title"> EMAIL </h3>
+                                <span class="contact__subtitle"> michaeljfreda@gmail.com </span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-location-pin-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title"> ADDRESS </h3>
+                                <span class="contact__subtitle"> 28 North College Street, Carlisle, Pennsylvania, USA </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORM -->
+                    <div class="col-lg-6 pl-lg-4 mt-lg-0 mt-6 contact-form" id="message-me">
+                        <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
+
+                        <form action="mailto:juhuhni98@gmail.com" method="POST" class="cf">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="message-name" class="form-control form__color mb-30 cf" placeholder="Your Name">
+                                </div> 
+                                <div class="col-lg-6">
+                                    <input type="email" name="message-email" class="form-control form__color mb-30 cf" placeholder="Your Email">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="message-subject" class="form-control form__color mb-30 cf" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control form__color mb-30 cf" cols="30" rows="5" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="button button--flex send-message form_button">
+                                        Send Message
+                                        <i class="uil uil-message button__icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid" style="display:contents">
+
+                    <div style="margin-left: 20px;">
+                        <h1 class="footer__title"> Michael Freda </h1>
+                        <span class="footer__subtitle"> Student AI Researcher/Data Analyst</span>
+                    </div>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/MichaelFreda/" target="_blank" class="footer__social" id="myLinkedIn">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/MichaelFreda" target="_blank" class="footer__social" id="myGitHub">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="footer__copy">&#169; Michael Freda</p>
+                </div>
+            </div>
+        </footer>
         <script src="https://flowbite.com/docs/flowbite.min.js"></script>
         <script src="https://flowbite.com/docs/datepicker.min.js"></script>
         <script src="https://flowbite.com/docs/docs.js?v=2.2.0a"></script>
