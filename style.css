@@ -126,7 +126,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  text-align: center !important;
+  text-align: center;
 }
 
 ul {
@@ -716,6 +716,8 @@ a {
     min-height: 60vh;
   } */
   
+  .education__container,
+  .experience__container,
   .about__container,
   .skill__container,
   .portfolio__container,
@@ -959,6 +961,7 @@ a {
 .contact__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  text-align:left !important;
 }
 
 .contact__subtitle {
@@ -1142,6 +1145,8 @@ form textarea {
   color: var(--first-color-lighter);
 }
 
-
+.education__container, .experience__container {
+  height: 75%;
+}
 
 }
