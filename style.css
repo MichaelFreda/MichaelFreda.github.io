@@ -877,6 +877,10 @@ a {
 .imgBox__timeline {
   padding-top: 2em;
   width: 25%;
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-2);
+  display: inline-flex;
+  justify-self: center;
 }
 
 /* ===================== ABOUT ================== */
@@ -894,6 +898,7 @@ a {
 }
 
 .about__description {
+  text-align: center !important;
   margin-bottom: var(--mb-2-5);
   color: var(--text-color);
 }
