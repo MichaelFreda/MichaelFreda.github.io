@@ -169,7 +169,7 @@ a {
   margin-right: var(--mb-0-25);
 }
 
-.nav__logo,
+/* .nav__logo,
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -187,7 +187,7 @@ a {
 
 .nav__toggle:hover {
   color: var(--first-color);
-}
+} */
 
 .navbar-brand {
   font-family: var(--robotomono-font);
@@ -776,8 +776,7 @@ a {
   }
 
   .nav__icon,
-  .nav__close,
-  .nav__toggle {
+  .nav__close {
     display: none;
   }
 
