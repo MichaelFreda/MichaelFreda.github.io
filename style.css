@@ -126,6 +126,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  text-align: center !important;
 }
 
 ul {
@@ -571,10 +572,13 @@ a {
   color: var(--text-color);
   margin-bottom: 30px;
   line-height: 1.5em;
+  word-wrap:break-word;
+  /* max-width: 85%; */
+  /* margin: 2 !important; */
   /* white-space: nowrap;
   word-wrap: break-word; 
   overflow-wrap: break-word; */
-  white-space:nowrap;
+  /* white-space:nowrap; */
 }
 
 .blog-slider__button {
@@ -890,7 +894,6 @@ a {
 }
 
 .about__description {
-  text-align: center;
   margin-bottom: var(--mb-2-5);
   color: var(--text-color);
 }
